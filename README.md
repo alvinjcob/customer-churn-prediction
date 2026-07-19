@@ -92,15 +92,30 @@ customer-churn-prediction/
 ├── requirements.txt
 └── churn.csv
 ```
+##  Models Implemented
 
-## 📈Results
+This project compares the performance of two supervised machine learning algorithms:
+
+- Logistic Regression
+- Random Forest Classifier
+
+Both models were trained and evaluated using multiple classification metrics to determine their effectiveness in predicting customer churn.
+
+## Model Performance
+
+| Model | Accuracy | Precision | Recall | ROC-AUC |
+|------|---------:|----------:|-------:|--------:|
+| Logistic Regression | 60% | 39% | **77%** | **0.71** |
+| Random Forest | **72%** | **49%** | 30% | 0.69 |
+
+## Key Findings
+
+- Random Forest achieved the highest overall accuracy.
+- Logistic Regression achieved significantly higher recall, making it better at identifying customers likely to churn.
+- The project demonstrates how different evaluation metrics influence model selection depending on business objectives.
+
+## Results
 
 The model successfully predicts customer churn based on historical customer data. Performance is evaluated using classification metrics such as Accuracy, Precision, Recall, and F1 Score.
 
-## Contact
 
-**Alvin Jacob**
-
-LinkedIn: https://linkedin.com/in/your-linkedin
-
-GitHub: https://github.com/yourusername
